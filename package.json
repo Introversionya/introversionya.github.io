@@ -1,29 +1,20 @@
 {
-  "name": "personal-site-introversionya",
-  "private": true,
-  "type": "module",
-  "overrides": {
-    "vue": "latest"
-  },
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "0.8.2",
-    "@types/node": "20.5.9",
-    "autoprefixer": "10.4.15",
-    "nuxt": "3.7.0",
-    "postcss": "8.4.29",
-    "push-dir": "0.4.1",
-    "sass": "1.66.1"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "0.4.11",
-    "pinia": "2.1.6"
-  }
+	"name": "test",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d build -t true"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.2.1",
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.5.10",
+		"@sveltejs/vite-plugin-svelte": "^3.1.0",
+		"svelte": "^4.2.17",
+		"vite": "^5.2.11"
+	},
+	"type": "module"
 }
