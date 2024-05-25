@@ -21,6 +21,7 @@
 		"vite": "^5.2.11"
 	},
 	"dependencies": {
+		"firebase": "^10.12.1",
 		"svelte-highlight": "^7.6.1",
 		"tippy.js": "^6.3.7"
 	}

@@ -1,6 +1,6 @@
 <script>
-	import "../assets/scss/global.scss"
 	import { updated } from '$app/stores';
+	import "../assets/scss/global.scss"
 </script>
 
 <slot />
@@ -8,14 +8,10 @@
 {#if $updated}
   <div class="toast">
     <p>
-      A new version of the app is available
+      Доступна новая версия страницы
       <button on:click={() => location.reload()}>
-        reload the page
+        Перезагрузить страницу
       </button>
     </p>
   </div>
 {/if}
-
-<button on:click={() => updated.check()}>
-	проверить
-</button>
