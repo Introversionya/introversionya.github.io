@@ -3,6 +3,7 @@ import htmlMinifier from "sveltekit-html-minifier";
 import preprocess from "svelte-preprocess";
 
 const config = {
+	ssr: true,
 	preprocess: preprocess() /* обработка scss отдельных файлов */,
 	kit: {
 		adapter: htmlMinifier(
