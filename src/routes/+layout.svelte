@@ -1,6 +1,6 @@
 <script>
 	import { updated } from '$app/stores';
-	import "../assets/scss/global.scss"
+	// import "../assets/scss/global.scss"
 </script>
 
 <slot />
