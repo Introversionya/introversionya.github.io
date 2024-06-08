@@ -1,11 +1,17 @@
 <script>
-	import { updated } from '$app/stores';
+	// import { updated } from '$app/stores';
 	// import "../assets/scss/global.scss"
 </script>
 
+<svelte:head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</svelte:head>
+
 <slot />
 
-{#if $updated}
+<!-- {#if $updated}
   <div class="toast">
     <p>
       Доступна новая версия страницы
@@ -14,4 +20,4 @@
       </button>
     </p>
   </div>
-{/if}
+{/if} -->

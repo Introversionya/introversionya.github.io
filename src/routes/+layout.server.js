@@ -3,12 +3,12 @@ export const ssr = true; // false переключит в режим SPA
 export const csr = true; // Client-Side Rendering - отправляет на клиент js
 // export const trailingSlash = 'never'; // определяет, как обрабатывать конечные слэши в URL (never по умолчанию)
 
-// export async function load() {
-// 	console.log('+layout.server.js');
-//   return {};
-// }
-
-
+export function load({ setHeaders }) {
+	setHeaders({
+		'Cache-Control': 'public, must-revalidate',
+		'Expires': new Date(Date.now() + 60 * 60 * 24 * 7 * 1000).toUTCString()
+	});
+}
 
 
 
