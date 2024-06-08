@@ -5,7 +5,7 @@ const config = {
 		adapter: adapter({fallback: "404.html"}),
 		version: {
 			name: Date.now().toString(),
-			pollInterval: 3000,
+			pollInterval: 30000,
 		},
 	},
 };

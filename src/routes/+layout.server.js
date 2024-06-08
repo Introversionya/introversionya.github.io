@@ -3,10 +3,10 @@ export const ssr = true; // false переключит в режим SPA
 export const csr = true; // Client-Side Rendering - отправляет на клиент js
 // export const trailingSlash = 'never'; // определяет, как обрабатывать конечные слэши в URL (never по умолчанию)
 
-export async function load() {
-	console.log('+layout.server.js');
-  return {};
-}
+// export async function load() {
+// 	console.log('+layout.server.js');
+//   return {};
+// }
 
 
 

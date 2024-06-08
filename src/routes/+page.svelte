@@ -1,21 +1,21 @@
 <script>
 	let title = "home";
 
-	let name = '';
-	let surname = '';
-	let message = '';
+	// let name = '';
+	// let surname = '';
+	// let message = '';
 
-	async function write() {
-		const response = await fetch('/api', {
-			method: "POST",
-			body: JSON.stringify({ name, surname }),
-			headers: {
-				'content-type': 'application/json'
-			}
-		})
-		// получаем ответ от +server.js
-		message = await response.text();
-	}
+	// async function write() {
+	// 	const response = await fetch('/api', {
+	// 		method: "POST",
+	// 		body: JSON.stringify({ name, surname }),
+	// 		headers: {
+	// 			'content-type': 'application/json'
+	// 		}
+	// 	})
+	// 	// получаем ответ от +server.js
+	// 	message = await response.text();
+	// }
 </script>
 
 <svelte:head>
